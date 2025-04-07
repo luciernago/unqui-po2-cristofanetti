@@ -24,9 +24,9 @@ public class CounterTestCase {
 		counter.addNumber(3);
 		counter.addNumber(5);
 		counter.addNumber(7);
-		counter.addNumber(9);
-		counter.addNumber(1);
-		counter.addNumber(1);
+		counter.addNumber(269);
+		counter.addNumber(22422425);
+		counter.addNumber(25643);
 		counter.addNumber(1);
 		counter.addNumber(1);
 		counter.addNumber(4);
@@ -56,9 +56,17 @@ public class CounterTestCase {
 			int amount = counter.cantidadMultiplosDe(3);
 		
 		// Chequeo que la cantidad es la esperada
-			assertEquals(amount, 2);
+			assertEquals(amount, 1);
 	}
-
-
+	
+	@Test
+	public void testNumeroConMasDigitosPares() {
+		// Obteniendo el numero con mas digitos pares
+			int num = counter.numeroConMasDigitosPares();
+		// Chequeo que el numero es 
+			assertEquals(num, 22422425);
+			
+	}
+	
 
 }

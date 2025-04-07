@@ -37,6 +37,32 @@ public class Counter {
 		return x % y == 0;
 	}
 	
+	//Ejercicio 2
+	
+	public int numeroConMasDigitosPares() {
+		int num = 0;
+		int cant = 0;
+		for(int elemento: contador) {
+			int cantPares = cantidadDeParesEnNumero(elemento); 
+			if (cantPares > cant) {
+				num = elemento;
+				cant = cantPares;
+			}
+		}
+		return num;
+	}
+	
+	private int cantidadDeParesEnNumero(int x) {
+		int num = x;
+		int cant = 0;
+		while (num!=0) {
+			if (esMultiplo(num,2)) {
+				cant++;
+			}
+			num = num/10;
+		}
+		return cant;
+	}
 	
 	
 }
