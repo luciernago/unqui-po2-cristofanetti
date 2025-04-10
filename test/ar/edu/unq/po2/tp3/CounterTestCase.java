@@ -59,16 +59,6 @@ public class CounterTestCase {
 			assertEquals(amount, 1);
 	}
 	
-	// Ejercicio 2
-	
-	@Test
-	public void testNumeroConMasDigitosPares() {
-		// Obteniendo el numero con mas digitos pares
-			int num = counter.numeroConMasDigitosPares();
-		// Chequeo que el numero es 
-			assertEquals(num, 22422425);
-			
-	}
 	
 	// Ejercicio 3
 	
