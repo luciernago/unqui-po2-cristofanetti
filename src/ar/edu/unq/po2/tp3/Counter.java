@@ -38,14 +38,4 @@ public class Counter {
 		return x % y == 0;
 	}
 	
-	//Ejercicio 3
-	
-	public int multiploMayorDe(int x, int y) {
-		int num = 1000;
-		while (!esMultiplo(num,x) || !esMultiplo(num, y)) {
-			num--;
-		}
-		return num;
-	}
-	
 }

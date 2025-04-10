@@ -58,21 +58,4 @@ public class CounterTestCase {
 		// Chequeo que la cantidad es la esperada
 			assertEquals(amount, 1);
 	}
-	
-	
-	// Ejercicio 3
-	
-	@Test
-	public void testMultiploMayor() {
-		// Obteniendo el multiplo mayor de 3 y 9
-			int num = counter.multiploMayorDe(3, 9);
-	    // Chequeo que el numero es 999
-			assertEquals(num, 999);
-		// Obteniendo el multiplo mayor de 3 y 9
-			num = counter.multiploMayorDe(3, 8);
-	    // Chequeo que el numero es 984
-			assertEquals(num, 984);
-			
-	}
-
 }

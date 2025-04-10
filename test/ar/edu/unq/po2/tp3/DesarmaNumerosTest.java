@@ -32,3 +32,9 @@ public class DesarmaNumerosTest {
 			
 	}
 }
+
+/**
+* DUDA: No estoy reutilizando Counter, esto esta bien?
+* -Deberia crear una superclase?
+* -Deberia importar Counter?
+*/
