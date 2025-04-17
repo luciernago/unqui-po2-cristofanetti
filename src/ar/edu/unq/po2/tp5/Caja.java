@@ -8,9 +8,9 @@ public class Caja {
 		super();
 	}
 	
-	public void registrarProducto(Producto p) {
+	public void registrarItem(Producto p) {
 		this.montoAPagar = montoAPagar + p.getPrecio();
-		p.decrementarStock();
+		p.registrarPago();
 	}
 	
 	public Double getMontoAPagar() {

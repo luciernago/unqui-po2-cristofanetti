@@ -30,7 +30,7 @@ public abstract class Producto {
 		this.stock = stock;
 	}
 	
-	public void decrementarStock() {
+	public void registrarPago() {
 		this.stock--;
 	}
 		

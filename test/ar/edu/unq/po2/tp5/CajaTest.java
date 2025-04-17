@@ -19,14 +19,14 @@ public class CajaTest {
 	
 	@Test
 	public void testGetMontoAPagar() {
-		cajaSuper.registrarProducto(arroz);
-		cajaSuper.registrarProducto(leche);
+		cajaSuper.registrarItem(arroz);
+		cajaSuper.registrarItem(leche);
 		assertEquals(3850d, cajaSuper.getMontoAPagar());
 	}
 	
 	@Test
 	public void testRegistrarProducto() {
-		cajaSuper.registrarProducto(arroz);
+		cajaSuper.registrarItem(arroz);
 		assertEquals(29,arroz.getStock());
 	}
 }
