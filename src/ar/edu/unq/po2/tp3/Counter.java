@@ -1,11 +1,12 @@
 package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Counter {
 
-	private ArrayList<Integer> contador = new ArrayList<Integer>();
+	private List<Integer> contador = new ArrayList<Integer>();
 
 	public Counter() {
 		super();
