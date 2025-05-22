@@ -11,10 +11,8 @@ public class PropiedadEnComun extends Filtro {
 		Set<String> w1Propiedades = w1.getInfobox().keySet();
 		Set<String> w2Propiedades = w2.getInfobox().keySet();
 		for (String p:w1Propiedades) {
-			while (!con){
-				if (w2Propiedades.contains(p)) {
-					con = true;
-				}
+			if (!con && w2Propiedades.contains(p)) {
+				con = true;
 			}
 		}
 		return con;

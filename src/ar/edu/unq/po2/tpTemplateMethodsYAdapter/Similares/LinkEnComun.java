@@ -10,10 +10,8 @@ public class LinkEnComun extends Filtro {
 		List<WikipediaPage> w1Links = w1.getLinks();
 		List<WikipediaPage> w2Links = w2.getLinks();
 		for (WikipediaPage p:w1Links) {
-			while (!con){
-				if (w2Links.contains(p)) {
-					con = true;
-				}
+			if (!con && w2Links.contains(p)) {
+				con = true;
 			}
 		}
 		return con;
